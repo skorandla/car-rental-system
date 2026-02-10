@@ -1,0 +1,46 @@
+
+
+			
+			┌─────────────────────┐
+			│   CarRentalService  │   (Facade / API layer)
+			└─────────▲───────────┘
+			          │
+			┌─────────┴───────────┐
+			│  InventoryService   │
+			│ ReservationService  │   (Business layer)
+			└─────────▲───────────┘
+			          │
+			┌─────────┴───────────┐
+			│   Repositories      │   (Persistence layer – in memory)
+			└─────────────────────┘
+			
+
+
+
+
+			
+			com.example.carrental
+			 ├─ model
+			 │   ├─ Car
+			 │   ├─ CarType
+			 │   ├─ Reservation
+			 │   └─ User
+			 │
+			 ├─ repository
+			 │   ├─ CarRepository
+			 │   ├─ ReservationRepository
+			 │   └─ inmemory
+			 │        ├─ InMemoryCarRepository
+			 │        └─ InMemoryReservationRepository
+			 │
+			 ├─ service
+			 │   ├─ InventoryService
+			 │   ├─ ReservationService
+			 |   ├─ CarRentalService
+			 │   └─ impl
+			 │        ├─ DefaultInventoryService
+			 │        └─ DefaultReservationService
+			 │
+			 └─ CarRentalApplication
+			
+
