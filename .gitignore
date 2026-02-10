@@ -2,4 +2,5 @@ car-rental-system/.mvn
 car-rental-system/.settings
 car-rental-system/.classpath
 car-rental-system/.project
+car-rental-system/target/*
 
